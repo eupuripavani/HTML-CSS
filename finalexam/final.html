@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Face Shop</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			background-image: radial-gradient(black 40%, transparent 70%);
+			background-size: 5px 5px;
+		}
+	    section {
+			width: 500px;
+			margin: 50px auto 0;
+		}
+		.nav-main{
+			margin-top: 0;
+			text-align: center;
+			font-size: 40px;
+			font-family: arial;
+			font-style: bold;
+			text-shadow: 5px 10px 10px gold;
+			animation: radioAnim 10s infinite;
+		}
+		@keyframes radioAnim{
+			0% {
+                color: honeydew; 
+            }
+            25% {
+                color: floralwhite; 
+            }
+            50% {
+                color: orangered;
+            }
+            75% {
+                color: floralwhite; 
+            }
+            100% {
+                color: gold;
+            }
+		}
+
+        /*for radio button*/
+		.radio{
+			margin-left: 50px;
+			margin-right: 50px;
+			background-color: floralwhite;	
+		}
+        /*for sale*/
+
+		 #for-sale {
+        height: 110px;
+        width: 200px;
+        padding: 2em;
+        color: yellow;
+        font-size: 55px;
+        font-weight: bold;
+        transition: color 7s linear;
+        -webkit-transition: color 7s linear;
+        -o-transition: color 7s linear;
+        -moz-transition: color 7s linear;
+        -ms-transition: color 7s linear;
+        animation: forsale 15s infinite;
+        position: absolute;
+
+        }
+          @keyframes forsale {
+            0% {
+                color: chartreuse; left: 0vw; top: 8vh;
+            }
+            20% {
+                color: tomato; left: 14vw; top: 64vh;
+            }
+            40% {
+                color: mediumblue; left: 28vw; top: 16vh;
+            }
+            60% {
+                color: red;left: 42vw; top: 64vh;
+            }
+			80% {
+                color: pink;left: 56vw; top: 24vh;
+            }
+            100% {
+                color: indigo; left: 70vw; top: 64vh;
+            }
+
+            /*for backgroundimages-animation*/
+        }
+		 #article-background div {
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;            
+            left: 0;
+
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+
+            opacity: 0;
+            z-index: -1;
+            animation: backgroundAnim 36s linear infinite 0s;
+        }
+        #article-background div:nth-child(1) {
+            background-image: url(model1.png);
+            animation-delay: 1s;
+        }
+        #article-background div:nth-child(2) {
+            background-image: url(model2.png);
+            animation-delay:8s;
+        }
+        #article-background div:nth-child(3) {
+            background-image: url(model3.png);
+            animation-delay: 15s;
+        }
+        #article-background div:nth-child(4) {
+            background-image: url(model7.jpg);
+            animation-delay: 22s;
+        }
+        #article-background div:nth-child(5) {
+            background-image: url(model5.png);
+            animation-delay: 28s;
+        }
+        #article-background div:nth-child(6) {
+            background-image: url(model6.png);
+            animation-delay: 35s;
+        } 		
+ 		@keyframes backgroundAnim {
+            0% {
+                opacity: 0.1;
+                animation-timing-function: ease-in;
+            }
+            7% {
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+            14% {
+                opacity: 1;
+                animation-timing-function: ease-in-out;
+            }
+            28% {
+                opacity: 0;
+                animation-timing-function: ease-in-out;
+            }
+            22% {
+                opacity: 0;
+                animation-timing-function: ease-in-out;
+            }
+            56% {
+                opacity: 0;
+                animation-timing-function: ease-in-out;
+            }
+
+        }
+        .div-item{
+        	position: absolute;
+            left: 1vw;
+            top: 12vh;
+            width: 250px;
+      		height: 250px;
+        }
+       	.div-lipstick {
+            display: none;
+            transition: all 6s linear;
+            -webkit-transition: all 6s linear;
+            -o-transition: all 6s linear;
+            -moz-transition: all 6s linear;
+            -ms-transition: all 6s linear;
+            background-image: url(lipstick.png);
+            background-position: center;
+            background-size: cover;
+            animation: divlipstick 6s forwards;
+        }
+        @keyframes divlipstick {
+        	0% {
+                left: 0px; 
+                top: 0px; 
+                border-radius: 0;
+            }
+            100% {
+                top: 400px;
+                left: 500px;
+                border-radius: 50%;
+                transform: rotate(360deg);
+            }
+        }
+        #lipstick:checked + div {
+            display: block;
+        }
+		.div-lipgloss {
+            display: none;
+            transition: all 6s linear;
+            -webkit-transition: all 6s linear;
+            -o-transition: all 6s linear;
+            -moz-transition: all 6s linear;
+            -ms-transition: all 6s linear;
+            background-image: url(lipgloss.png);
+            background-position: center;
+            background-size: cover;
+            animation: divlipgloss 6s forwards;
+        }
+        @keyframes divlipgloss {
+        	0% {
+                top: 0px;
+                left: 0px;  
+                border-radius: 0;
+            }
+            100% {
+                top: 250px;
+                left: 700px;  
+                border-radius: 101px / 100px;
+                transform: rotate(360deg);
+            }
+        }
+        #lipgloss:checked + div {
+            display: block;
+        }
+ 		.div-eyeliner {
+            display: none;
+            transition: all 6s linear;
+            -webkit-transition: all 6s linear;
+            -o-transition: all 6s linear;
+            -moz-transition: all 6s linear;
+            -ms-transition: all 6s linear;
+            background-image: url(eyeliner.png);
+            background-position: center;
+            background-size: cover;
+            animation: diveyeliner 6s forwards;
+        }
+        @keyframes diveyeliner {
+        	0% {
+                top: 0px;
+                left: 0px;  
+                border-radius: 0;
+            }
+            100% {
+                top: 250px;
+                left: 700px;  
+                border-radius: 101px / 50px;
+                transform: rotate(360deg);
+            }
+        }
+        #eyeliner:checked + div {
+            display: block;
+        }          
+        .div-foundation {
+            display: none;
+            transition: all 6s linear;
+            -webkit-transition: all 6s linear;
+            -o-transition: all 6s linear;
+            -moz-transition: all 6s linear;
+            -ms-transition: all 6s linear;
+
+            background-image: url(foundation.png);
+            background-position: center;
+            background-size: cover;
+            animation: divfoundation 6s forwards;
+        }
+        @keyframes divfoundation {
+        	0% {
+                top: 0px;
+                left: 0px;  
+                border-radius: 0;
+            }
+            100% {
+                top: 200px;
+                left: 700px;  
+                border-radius: 101px / 150px;
+                transform: rotate(360deg);
+            }
+        }
+        #foundation:checked + div {
+            display: block;
+        }          
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header-main">
+		</header>
+		<nav class="nav-main">
+			<input class="radio" type="radio" name="makeupproduct" id="lipstick" value="lipstick"/>
+			<div class="div-item div-lipstick"></div>
+			<label for="radio1">Lip&#45;Stick</label>
+
+			<input class="radio"  type="radio" name="makeupproduct" id="lipgloss" value="lipgloss"/>
+			<div class="div-item div-lipgloss"></div>
+			<label for="radio2">Lip&#45;Gloss</label>
+
+			<input class="radio"  type="radio" name="makeupproduct" id="eyeliner" value="eyeliner"/>
+			<div class="div-item div-eyeliner"></div>
+			<label for="radio3">Eye&#45;Liner</label>
+			
+			<input class="radio"  type="radio" name="makeupproduct" id="foundation" value="foundation"/>
+			<div class="div-item div-foundation"></div>
+			<label for="radio4">Foundation</label>
+		</nav>
+		<div id="container">
+			<p id="for-sale">ForSale&#33;</p>
+			<section>
+				<article id="article-background">
+					<div></div><div></div><div></div><div></div><div></div><div></div>
+				</article>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

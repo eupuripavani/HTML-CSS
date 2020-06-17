@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>WiFi-hotspot</title>
+	<meta charset="utf-8">
+	 <meta name=" viewport" content=" width=device-width, initial-scale=1.0">
+	 <style type="text/css">
+	 	@media print{
+       	a:after{content:" (" attr(href) ") ";font-size:2.5em;
+       	}
+   		}
+	 	.example {
+	 		padding: 20px;
+	 		color: black;
+	 		font-size: 30px;
+	 	}
+	 	@media only screen and (max-width: 600px) {
+	 		.example {background: cornsilk;
+	 		          font-size: 10pt;
+	 		          color: lightblue;}
+	 	}
+	 	@media only screen and (min-width: 600px) {
+	 		.example {background: green;
+	 		          font-size: 20pt;
+	 		          color: thistle;}
+	 	}
+	 	@media only screen and (min-width: 768px) {
+	 		.example {background: lightcyan;
+	 		          font-size: 30pt;
+	 		          color: teal;}
+	 	}
+	 	@media only screen and (min-width: 992px) {
+	 		.example {background: lemonchiffon;
+	 			      font-size: 40pt;
+	 			      color: darkgray;}
+	 	}
+	 	@media only screen and (min-width: 1200px) {
+	 		.example {background: tan;
+	 		          font-size: 50pt;
+	 		          color: salmon;}
+	 	}
+	 	.example1 {
+	 		padding: 20px;
+	 		color: black;
+	 		font-size: 30px;
+	 	}
+	 	@media only screen and (max-width: 600px) {
+	 		.example1 {background: cornsilk;
+	 		          font-size: 10pt;
+	 		          color: lightblue;}
+	 	}
+	 	@media only screen and (min-width: 600px) {
+	 		.example1 {background: green;
+	 		          font-size: 20pt;
+	 		          color: thistle;}
+	 	}
+	 	@media only screen and (min-width: 768px) {
+	 		.example1 {background: lightcyan;
+	 		          font-size: 30pt;
+	 		          color: teal;}
+	 	}
+	 	@media only screen and (min-width: 992px) {
+	 		.example1 {background: lemonchiffon;
+	 			      font-size: 40pt;
+	 			      color: darkgray;}
+	 	}
+	 	@media only screen and (min-width: 1200px) {
+	 		.example1 {background: tan;
+	 		          font-size: 50pt;
+	 		          color: salmon;}
+	 	}
+ 		.example2 {
+	 		padding: 20px;
+	 		color: black;
+	 		font-size: 30px;
+	 	}
+	 	@media only screen and (max-width: 600px) {
+	 		.example2 {background: cornsilk;
+	 		          font-size: 10pt;
+	 		          color: lightblue;}
+	 	}
+	 	@media only screen and (min-width: 600px) {
+	 		.example2 {background: green;
+	 		          font-size: 20pt;
+	 		          color: thistle;}
+	 	}
+	 	@media only screen and (min-width: 768px) {
+	 		.example2 {background: lightcyan;
+	 		          font-size: 30pt;
+	 		          color: teal;}
+	 	}
+	 	@media only screen and (min-width: 992px) {
+	 		.example2 {background: lemonchiffon;
+	 			      font-size: 40pt;
+	 			      color: darkgray;}
+	 	}
+	 	@media only screen and (min-width: 1200px) {
+	 		.example2 {background: tan;
+	 		          font-size: 50pt;
+	 		          color: salmon;}
+	 	}
+	 	.example3 {
+	 		padding: 20px;
+	 		color: black;
+	 		font-size: 30px;
+	 	}
+	 	@media only screen and (max-width: 600px) {
+	 		.example3 {background: cornsilk;
+	 		          font-size: 10pt;
+	 		          color: lightblue;}
+	 	}
+	 	@media only screen and (min-width: 600px) {
+	 		.example3 {background: green;
+	 		          font-size: 20pt;
+	 		          color: thistle;}
+	 	}
+	 	@media only screen and (min-width: 768px) {
+	 		.example3 {background: lightcyan;
+	 		          font-size: 30pt;
+	 		          color: teal;}
+	 	}
+	 	@media only screen and (min-width: 992px) {
+	 		.example3 {background: lemonchiffon;
+	 			      font-size: 40pt;
+	 			      color: darkgray;}
+	 	}
+	 	@media only screen and (min-width: 1200px) {
+	 		.example3 {background: tan;
+	 		          font-size: 50pt;
+	 		          color: salmon;}
+	 	}
+	 	.example4 {
+	 		padding: 20px;
+	 		color: black;
+	 		font-size: 30px;
+	 	}
+	 	@media only screen and (max-width: 600px) {
+	 		.example4 {background: cornsilk;
+	 		          font-size: 10pt;
+	 		          color: lightblue;}
+	 	}
+	 	@media only screen and (min-width: 600px) {
+	 		.example4 {background: green;
+	 		          font-size: 20pt;
+	 		          color: thistle;}
+	 	}
+	 	@media only screen and (min-width: 768px) {
+	 		.example4 {background: lightcyan;
+	 		          font-size: 30pt;
+	 		          color: teal;}
+	 	}
+	 	@media only screen and (min-width: 992px) {
+	 		.example4 {background: lemonchiffon;
+	 			      font-size: 40pt;
+	 			      color: darkgray;}
+	 	}
+	 	@media only screen and (min-width: 1200px) {
+	 		.example4 {background: tan;
+	 		          font-size: 50pt;
+	 		          color: salmon;}
+	 	}
+	 	.example5 {
+	 		padding: 20px;
+	 		color: black;
+	 		font-size: 30px;
+	 	}
+	 	@media only screen and (max-width: 600px) {
+	 		.example5 {background: cornsilk;
+	 		          font-size: 10pt;
+	 		          color: lightblue;}
+	 	}
+	 	@media only screen and (min-width: 600px) {
+	 		.example5 {background: green;
+	 		          font-size: 20pt;
+	 		          color: thistle;}
+	 	}
+	 	@media only screen and (min-width: 768px) {
+	 		.example5 {background: lightcyan;
+	 		          font-size: 30pt;
+	 		          color: teal;}
+	 	}
+	 	@media only screen and (min-width: 992px) {
+	 		.example5 {background: lemonchiffon;
+	 			      font-size: 40pt;
+	 			      color: darkgray;}
+	 	}
+	 	@media only screen and (min-width: 1200px) {
+	 		.example5 {background: tan;
+	 		          font-size: 50pt;
+	 		          color: salmon;}
+	 	}
+	 	.example6 {
+	 		padding: 20px;
+	 		color: black;
+	 		font-size: 30px;
+	 	}
+	 	@media only screen and (max-width: 600px) {
+	 		.example6 {background: cornsilk;
+	 		          font-size: 10pt;
+	 		          color: lightblue;}
+	 	}
+	 	@media only screen and (min-width: 600px) {
+	 		.example6 {background: green;
+	 		          font-size: 20pt;
+	 		          color: thistle;}
+	 	}
+	 	@media only screen and (min-width: 768px) {
+	 		.example6 {background: lightcyan;
+	 		          font-size: 30pt;
+	 		          color: teal;}
+	 	}
+	 	@media only screen and (min-width: 992px) {
+	 		.example6 {background: lemonchiffon;
+	 			      font-size: 40pt;
+	 			      color: darkgray;}
+	 	}
+	 	@media only screen and (min-width: 1200px) {
+	 		.example6 {background: tan;
+	 		          font-size: 50pt;
+	 		          color: salmon;}
+	 	}
+	 	.example7 {
+	 		padding: 20px;
+	 		color: black;
+	 		font-size: 30px;
+	 	}
+	 	@media only screen and (max-width: 600px) {
+	 		.example7 {background: cornsilk;
+	 		          font-size: 10pt;
+	 		          color: lightblue;}
+	 	}
+	 	@media only screen and (min-width: 600px) {
+	 		.example7 {background: green;
+	 		          font-size: 20pt;
+	 		          color: thistle;}
+	 	}
+	 	@media only screen and (min-width: 768px) {
+	 		.example7 {background: lightcyan;
+	 		          font-size: 30pt;
+	 		          color: teal;}
+	 	}
+	 	@media only screen and (min-width: 992px) {
+	 		.example7 {background: lemonchiffon;
+	 			      font-size: 40pt;
+	 			      color: darkgray;}
+	 	}
+	 	@media only screen and (min-width: 1200px) {
+	 		.example7 {background: tan;
+	 		          font-size: 50pt;
+	 		          color: salmon;}
+	 	} 
+
+	 	#h1{font-style: initial;
+	 	    color: darkslategray;
+	 	    font-weight: bold;}
+
+	 	#h2{font-style: initial;
+	 		color: darkslategray;
+	 	    font-weight: bold;}
+	</style>	
+</head>
+<body>
+	<div>
+		<header>
+			<h1 id="h1">Evil twins and other risks you can think of related to useing a WiFi hotspot?</h1>
+		</header>
+		<section>
+			<article>
+				<header>
+						<h1 id="h1">Risk-Possible Precaution</h1>
+				</header>
+				<div>					
+					<p class="example">This article is from <a href="https://www.lifewire.com/dangers-of-evil-twin-wi-fi-hotspots-2487659">
+					lifeware.org</a></p>
+					<h1 id="h1">Risk 1:-Malware Infection</h1>
+                    <p class="example1">Solution 1:-When connecting to the Internet at a public place, you’re unlikely to want to share anything. You can turn off sharing from the system preferences or Control Panel, depending on your OS, or let Windows turn it off for you by choosing the “Public” option the first time you connect to a new, unsecured network<a href="https://www.lifewire.com/how-to-encrypt-your-wireless-network-2487653">Wireless encryption</a>
+					lifeware.org</a></p>
+                    <br>
+                    <h1 id="h1">Risk 2:-MITM Attack</h1>
+                    <p class="example2">Solution 2:-When connecting to the Internet at a public place, you’re unlikely to want to share anything.<a href="https://www.lifewire.com/definition-of-wifi-protected-access-816576">Protected Access(WPA)</a> You can turn off sharing from the system preferences or Control Panel, depending on your OS, or let Windows turn it off for you by choosing the “Public” option the first time you connect to a new, unsecured network</p>
+                    <br>
+                    <h1 id="h1">Risk 3:-Unencrypted Networks</h1>
+                    <p class="example3">solution 3:-When connecting to the Internet at a public place, you’re unlikely to want to share anything. You can turn off sharing from the system preferences or Control Panel, depending on your OS,<a href="https://www.lifewire.com/best-vpn-service-providers-4061659">Virtual Private Networks(VPNs)</a> or let Windows turn it off for you by choosing the “Public” option the first time you connect to a new, unsecured network</p>
+                    <br>
+                    <h2 id="h2">If you have ever used a Wi-Fi hotspot, were you at risk?</h2>
+                    <p class="example4">	
+					An "Evil Twin" hotspot is a Wi-Fi access point set up by a hacker or cybercriminal. It mimics a legitimate hotspot, including the ​service set identifier (SSID), also known as the primary network name, provided by a nearby business, such as a coffee shop that provides free Wi-Fi access to its patrons.Hackers and other cybercriminals create Evil Twin hotspots so they can eavesdrop on network traffic and insert themselves into the data conversation between their victims and the servers that the victims access while connected to the Evil Twin hotspot.<a href="https://www.lifewire.com/what-is-a-personal-vpn-service-2487492">personal VPN services</a>
+                    By imitating a legitimate hotspot and tricking users into connecting to it, a hacker or cybercriminal can then steal account names and passwords and redirect victims to malware sites, phishing sites, etc. The perpetrators can also view the contents of files that the victims download or upload while they are connected to the Evil Twin access point
+					Attackers initiate the attack by boosting their signal strength using Wi-Fi power amplifiers and high gain antennas, and then send <a href="https://www.lifewire.com/definition-of-adapter-817585">Wi-Fi network adapter</a> frames to momentarily disconnect the target client from the legitimate AP.  The client device immediately attempts to re-connect to the same SSID  to preserve a seamless connection experience for the end-users. Because the Evil Twin AP is broadcasting the same SSID, but with a higher signal strength, the client auto-connects to it and re-establishes internet access. Now, the attacker can intercept the all the traffic flowing through the device. Also, malicious payloads like malware, botnets, and backdoors can also be loaded onto the victims devices while connected to the Evil Twin AP.
+					</p>
+                    <br>
+					<h2 id="h2">Knowing what you do now, would you take any new precautions the next time you use one?</h2>
+                    <p class="example5">There aren't a lot of ways to defend against this type of attack. You would think wireless encryption would prevent this type of attack, but it isn't an effective deterrent because Wi-Fi Protected Access (WPA) doesn't encrypt user data until after the association between the victim's network device and the access point has already been established.<a href="https://www.lifewire.com/introduction-to-mac-addresses-817937">MAC address</a>
+                    One of the ways suggested by the Wi-Fi Alliance to protect yourself from Evil Twin access points is to use a Virtual Private Network (VPN).<a href="https://www.lifewire.com/what-do-http-and-https-stand-for-3482375">HTTPS secured pages</a> Using the encrypted tunnel provided by the VPN helps to secure all traffic between your VPN-capable device and the VPN server</p>
+                    <br>
+					<h2 id="h2">What other Wi-Fi security risks are there and will these affect me?</h2>
+					<p class="example6">As Wi-Fi security is a difficult technology area, and security-related messaging coming from many vendors creates more confusion than clarity. To remedy this industry challenge, WatchGuard has introduced the <a href="https://www.lifewire.com/top-malware-threats-153641">malware</a> <a href="https://www.lifewire.com/top-malware-threats-153641">sites</a>.<a href="https://www.lifewire.com/phishing-scams-153131">phishing</a> This is a technology agnostic framework for building a complete Wi-Fi solution that is fast, easy to manage, and most importantly, detects and prevents attacks coming from the six known Wi-Fi threat categories:</p>
+                    <br>
+					<h2 id="h2">Is it possible to surf safely using a Wi-Fi hotspot?</h2>
+                    <p class="example7">A public Wi-Fi network is inherently less secure than your personal, private one, because you don't know who set it up, or who else is connecting to it.<a href="https://www.watchguard.com/wgrd-products/secure-wifi">Trusted Wireless Environment Framework.</a> Ideally, you wouldn't ever have to use it; better to use your smartphone as a hotspot instead.If you can, stick to as few public Wi-Fi networks as possible</p>
+                    <br>
+                    Reference:- i got this information from internet
+					</div>
+			</article>		
+		</section>
+	</div>
+	<br>
+	<br>
+	<hr>
+<footer>
+Copyright &copy;pavani eupuri <small>all rights reserved</small>
+</footer>
+</body>
+</html>

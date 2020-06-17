@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sushi</title>
+<meta charset="utf-8">        
+<style type="text/css">
+	body {
+		font: 1em Arial;
+		background-color: lightyellow;
+	}
+
+	body > section {
+			width: 400px;
+			margin: 0 auto;
+	}
+
+	article {
+				width: 400px;
+				margin-top: 50px;
+				float: center;
+				position: relative;
+	}
+
+	article div {
+					width: 500px;
+					height: 400px;
+					background: #ccc;
+					float: left;
+					margin: 0 5px 5px 0;
+					text-align: justify;
+					padding-top: 30px;
+					padding-left: 10px;
+					padding-right: 10px;
+	}
+
+	article:first-child div:hover {
+				    width: 400px;
+				    height: 440px;
+				    background: thistle;
+				    color: darkslategray;
+				    -webkit-transform: scale(1.4);
+	   /* This is the default central value */
+	   -webkit-transform-origin: 50% 50%;
+	   
+	   opacity: 0.8;
+	}
+	article:last-child div:hover {
+				    -webkit-transform: scale(1.1);
+				    background: thistle;
+				    color: darkslategray;
+	}
+    
+    header:hover {
+    	width:100px;
+    	height:70px;
+    	border:2px dotted blue;
+    	border-radius:50%;
+    	background:red;
+    	padding: 20px;
+    	text-align: center;
+    	font-weight: bolder;
+    	position:relative;
+    	animation:corners 5s;
+    	animation-iteration-count:5;
+    	animation-direction:alternate;
+    	animation-play-state:running;
+    	-webkit-animation:corners 5s; /* Safari and Chrome */
+    	-webkit-animation-iteration-count:3;
+    	-webkit-animation-direction:alternate;
+    	-webkit-animation-play-state:running;
+    	}
+    	@keyframes corners {
+    		0% {background:lime; left:0px; top:0px;}
+    		25% {background:pink; left:300px; top:0px;}
+    		50% {background:yellow; left:300px; top:300px;}
+    		75% {background:silver; left:0px; top:300px;}
+    		100% {background:lime; left:0px; top:0px;}
+    	}
+    	@-webkit-keyframes corners {
+    		0% {background:lime; left:0px; top:0px;}
+    		25% {background:pink; left:300px; top:0px;}
+    		50% {background:yellow; left:300px; top:300px;}
+    		75% {background:silver; left:0px; top:300px;}
+    		100% {background:lime; left:0px; top:0px;}
+    	}
+    	.span{
+	 	       	 color: midnightblue;
+	 	       	 font-style:italic;
+	 	       	 font-weight: bold;
+	 	       	 font-size: 8;}
+        @media print{
+        a:after{content:" (" attr(href) ") ";font-size:2.5em;
+        }
+    </style>
+</head>
+<body>
+<header>I Love Sushi/click here for animation</header>
+	<section>
+		<article>
+		    <div>
+		    	<h1>What is Sushi?</h1>
+        <p>Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.Sushi is sometimes confused with sashimi, a related dish in Japanese cuisine that consists of thinly sliced raw fish, or occasionally meat, and an optional serving of rice.Sushi is made of small pieces of raw fish that are wrapped in rice and seaweed. The seaweed, called nori, is collected with submerged bamboo nets. While some sushi is mass-produced using robots, the best sushi is made by hand</p>
+    </div>
+    <br>
+		    <div>
+        <h1>How to order?</h1>
+        <p>There are usually two options when ordering sushi: ‘omakase’ and ‘okonomi’Omakase literally means ‘I will leave it to you’, and in a sushi restaurant this means that you are leaving your order in the hands of the chef. You are giving the sushi chef the freedom to exercise his culinary creativity whilst making a friendly gesture and thus, you cannot make any requests. Of course, omakase doesn’t work well at chain restaurants with very limited ingredients, or if you are a picky eater.
+          <ol>
+            <li>Sit at the bar</li>
+            <li>Trust your server</li>
+            <li>Don't be afraid to ask questions</li>
+            <li>Don't order everything at once</li>
+            <li>Don't ask for soy sauce and wasabi if they're not served</li>
+            <li>Avoid flashy rolls</li>
+            <li>Seek out the specialties</li>
+            <li>When in a traditional sushi bar, sashimi should be ordered before sushi</li>
+          <br>          
+    </p>
+</div>
+		</article>
+		<article>
+		    <div>
+		    	<p>
+		    		<h1>Order and Types of sushi?</h1>
+		    		<ul>
+            <li>           	
+            Okonomi is where you order what you like. In some sushiya (sushi restaurants), a ‘tsumami’ (a Japanese style appetizer) is usually served first, followed by the sushi. However, customers can also stick to sushi alone. Some restaurants encourage diners to tell how much they are willing to spend so that they could adjust the types of sushi they will serve a bit according to the diner’s budget. Diners should also keep in mind that some toppings that are more expensive than others, like otoro (fatty tuna) or good quality uni (sea urchin).All About Sushi, the Most Famous Japanese Food! Sushi is the first name that strikes us when Japanese cuisine is mentioned. Sushi is perhaps the best known Japanese food dish to the outside world.It has always consisted of fermented fish and rice, and the word sushi means something that tastes sour.
+          </li>
+          <li>Different types of sushi: maki, temaki, uramaki, sashimi, and nigiri</li>
+          <li>Hamachi (yellow tail) Hamachi (yellow tail) nigiri.</li>
+          <li>Ebi (shrimp) Ebi (shrimp) nigiri.</li>          
+      </ul>
+  </p>
+</div>
+<div>
+	<h1>What's difference between grocery store sushi and serious sushi?</h1>
+        <p>
+        	Recently I have watched a youtube video<a href="https://www.youtube.com/watch?v=pPY91NNt3ys">Sushi Makeing Viedo</a> which is about a japanese sushi chef to review several brand's grocery sushi. Most of them got below the average rating. The chef were saying the rice was not sushi rice, because the sushi rice is a unique kind of rice. Besides, rice will be seasoning with vinegar, sugar, salt and mirin, and it would keep stiring and cooling the sushi rice. Second, the fish should be fresh and cut in right size and shape. In trandition japanses restaurnt, there's a unique kind of knife called "Yanagiba", and it's only used for cutting raw fish. By this knife, the slice of fish(sashimi) can have a shining, pretty and perfect cut to present how fresh the fish is. Also, california roll is the most common type we see in grocery store, but in fact, california roll doesn't exist in traditional japanese restaurant.<span class="span">Sushi is safe to eat as long as it has been prepared properly</span>.Sushi lovers need not fret about the raw fish they consume, food scientists say, as long as the sushi has been prepared properly according to regulations by the Food and Drug Administration
+        </p>
+    </div>
+		</article>
+	</section>
+</body>
+</html>

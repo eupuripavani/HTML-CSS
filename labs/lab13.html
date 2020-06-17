@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lab 13</title>
+<meta charset="utf-8">
+<style>
+    .paragraph{
+         color: blue;
+          font-size: large;
+          font-style: italic;
+          align-content: justify;
+     }
+</style>
+</head>
+<body>
+<header>
+	<h1>
+	Registration Form
+    </h1>
+</header>
+<section>
+	<header><form action="http://itu.lewebcafe.com/csc525/form.php" method="post"></header>
+		<fieldset>
+			<legend align="center">Enter Your Details</legend>
+<p class="paragraph">This is where the input fields are inserted.</p>
+<br>
+<label for="name"> Enter your Name:</label>
+ 	<input type="name" name="name" id="name">
+ 	<br>
+<label for="Address"> Enter your Address:</label>
+ 	<input type="Address" name="address" id="address">
+ 	<br>
+<label for="Email">Enter Your Email:</label>
+    <input type="Email" name="myEmail" id="myEmail">
+    <br>
+<label for="myTel"> Your Phone:</label>
+  <input type="Phone" name="myTel" id="myTel">
+	<br>
+<label for="Website"> Website name:</label>
+	<input type="Website" name="Website" id="website">
+	<br>
+<label for="colors"> Choose your favourite color:</label>
+	<input type="color" name="color" id="colors" list="color option">
+  <br>
+<label for="colors"> Favourite color name:</label>
+  <input type="datalist" name="color" id="colors" list="color option"> 
+  <datalist id="color option">
+      <option value="Red">
+      <option value="Yellow">
+      <option value="Blue">
+      <option value="Black">
+      <option value="Gray">
+      <option value="Navy">
+      <option value="Pink">
+      <option value="Hot pink">
+      <option value="Brown"> 
+  </datalist>
+    <br>
+  <label for="datalist"> Choose your vechile type:</label>
+  <input type="datalist" name="vechile" id="vechile" list="vechile model">  
+	<datalist id="vechile model">
+  		<option value="car">
+  		<option value="SUV">
+  		<option value="Bike">
+  		<option value="By-Cycle">
+  		<option value="Scooter">
+  		<option value="Any two weeler">
+  		<option value="Any four weeler">
+  		<option value="Ship">
+  		<option value="Boat">	
+  </datalist>
+  	<br>
+<label for="datalist"> Select Your Favourite pet:</label>
+  <input type="datalist" name="pet" id="pet" list="pet names"> 
+  <datalist id="pet names">
+      <option value="Dog">
+      <option value="Cat">
+      <option value="Small Puppy">
+      <option value="Parrots">
+      <option value="Snake">
+      <option value="Not a Pet lover"> 
+  </datalist>
+    <br>
+
+<label for="calender">Local Date and time:</label>
+  <input type="calender" name="myDate" id="myDate">
+  <br>
+  <br>
+  </fieldset>
+  <br>
+  <br>
+  <br>
+Add your comments:-
+<br>
+<textarea name="comments" rows="10" cols="30" wrap="soft">Feedback..
+</textarea>
+<textarea name="comments" rows="10" cols="30" wrap="soft">Any Suggestion?
+</textarea>
+
+<br>
+<button type="submit" name="SubmitButton" value="Submit"
+    style="background-color:blue; color:yellow;">Submit Form</button>
+<button type="reset" name="ResetButton" value="Reset"
+    style="background-color:red; color:white;">Reset Form</button>
+    <br>
+</form>
+</section>
+<br>
+<br>
+<hr align="left" width="100%" color="gray">
+<hr align="left"width="100%" color="black">
+<footer>
+Copyright &copy;pavani eupuri <small>all rights reserved</small>
+</footer>
+</body>
+</html>

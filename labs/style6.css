@@ -1,0 +1,31 @@
+
+
+#h1 {
+    background-color:gray;
+    color:black
+}
+
+.test {
+    background-color:palegoldenrod;
+    color:red;
+    font-family: italic  
+}
+#p {
+    font-size: x-large;
+    font-weight: 500;
+    font-style: italic; 
+    color:red;
+}
+
+.pav {
+    background-color:#FFFAFA;
+    color:gray;
+    font-family: italic; 
+    font-weight: 500; 
+}
+        
+
+a:link { background-color: blue;text-decoration:underline; }
+a:visited { color: pink; text-decoration:underline;}
+a:active { color: purple;text-decoration:underline; }
+a:hover { font-weight: bold;text-decoration:unset;color: white; background-color: black}
